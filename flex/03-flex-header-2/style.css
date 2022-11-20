@@ -12,6 +12,27 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  /* No hace realmente falta (queda igual)
+  flex-wrap: wrap;
+  */
+}
+
+.first-nest {
+  display:flex;
+  align-items: center;
+  flex:auto;
+  justify-content: flex-start;
+  
+}
+
+.second-nest {
+  display: flex;
+  align-items: center;
+  flex: auto;
+  justify-content: flex-end;
 }
 
 .profile-image {
@@ -45,4 +66,23 @@ a {
 
 ul {
   list-style-type: none;
+  display: flex;
+  padding: 0%;
 }
+
+
+/* My version: */
+
+li, .notifications, .logo {
+  margin-right: 16px;
+}
+
+/* OP version: 
+
+.first-nest, .second-nest {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+*/
